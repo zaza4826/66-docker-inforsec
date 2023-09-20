@@ -20,12 +20,11 @@ services:
       - PGADMIN_DEFAULT_EMAIL=${PGADMIN_DEFAULT_EMAIL}      
       - PGADMIN_DEFAULT_PASSWORD=${PGADMIN_DEFAULT_PASSWORD}  
 
-  strapi:
-    platform: linux/amd64 
-    image: naskio/strapi:latest    
+  strapi: 
+    image: napop/myapp:1.0  
     container_name: my-app-docker    
     ports:      
-      - 1337:1337    
+      - 3000:3000    
     environment:      
       - DATABASE_HOST=${DATABASE_HOST}     
       - DATABASE_NAME=${DATABASE_NAME}      
@@ -37,4 +36,3 @@ services:
       
  
     
-
