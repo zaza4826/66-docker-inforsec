@@ -21,10 +21,10 @@ services:
       - PGADMIN_DEFAULT_PASSWORD=${PGADMIN_DEFAULT_PASSWORD}  
 
   strapi: 
-    image: napop/myapp:1.0  
+    image: napop/myapp:latest
     container_name: my-app-docker    
     ports:      
-      - 3000:3000    
+      - 1337:1337    
     environment:      
       - DATABASE_HOST=${DATABASE_HOST}     
       - DATABASE_NAME=${DATABASE_NAME}      
