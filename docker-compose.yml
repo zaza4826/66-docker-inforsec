@@ -21,7 +21,7 @@ services:
       - PGADMIN_DEFAULT_PASSWORD=${PGADMIN_DEFAULT_PASSWORD}  
 
   strapi: 
-    image: napop/myapp:latest
+    image: champ4826/napop_strapi64:latest
     container_name: my-app-docker    
     ports:      
       - 1337:1337    
